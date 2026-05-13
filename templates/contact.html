@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Bryte</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">Bryte</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-hero">
+        <h1>Get In <span class="highlight">Touch</span></h1>
+        <p class="muted">Let's build something together</p>
+    </section>
+
+    <section class="contact-content">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Let's Work Together</h2>
+                <p>I am available for freelance projects. Whether you need a mobile app, a website, or a Python automation tool — let's talk.</p>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>bryte6595@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🐙</span>
+                        <div>
+                            <strong>GitHub</strong>
+                            <p>github.com/bryte6595-del</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <strong>Location</strong>
+                            <p>Ghana 🇬🇭 — Available Worldwide</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">⏱</span>
+                        <div>
+                            <strong>Response Time</strong>
+                            <p>Within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrap">
+                <h2>Send a Message</h2>
+                <form class="contact-form" action="/send" method="POST">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email</label>
+                        <input type="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>What do you need?</label>
+                        <select name="service">
+                            <option value="mobile">Mobile App</option>
+                            <option value="web">Website</option>
+                            <option value="automation">Automation Script</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Built by <strong>Bryte</strong> &mdash; Ghana 🇬🇭</p>
+    </footer>
+</body>
+</html>
