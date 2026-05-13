@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Bryte</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">Bryte</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-hero">
+        <h1>My <span class="highlight">Projects</span></h1>
+        <p class="muted">Things I have built from scratch</p>
+    </section>
+
+    <section class="projects-content">
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-header snake">
+                    <span>🐍</span>
+                </div>
+                <div class="project-body">
+                    <h3>Snake Game</h3>
+                    <p class="project-type">Mobile App &mdash; Android</p>
+                    <p>A classic Snake game built with Python and Kivy. Features three difficulty levels, power-ups, high score tracking, and smooth swipe controls. Published as an Android APK.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Kivy</span>
+                        <span class="tag">Android</span>
+                        <span class="tag">GitHub Actions</span>
+                    </div>
+                    <a href="https://github.com/bryte6595-del/snake-game" target="_blank" class="btn btn-primary">View on GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header portfolio">
+                    <span>🌐</span>
+                </div>
+                <div class="project-body">
+                    <h3>Portfolio Website</h3>
+                    <p class="project-type">Web App &mdash; Flask</p>
+                    <p>This very website! Built with Python Flask, HTML and CSS. Features multiple pages, responsive design, and a contact form. Deployed and live online.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    <a href="#" class="btn btn-primary">You Are Here</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="coming-soon">
+            <h2>More Coming Soon</h2>
+            <p>I am actively building new projects. Check back regularly!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Built by <strong>Bryte</strong> &mdash; Ghana 🇬🇭</p>
+    </footer>
+</body>
+</html>
