@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryte - Python Developer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">Bryte</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Hi, I'm <span class="highlight">Bryte</span></h1>
+        <p class="tagline">Python Developer from Ghana</p>
+        <p class="subtitle">I build mobile apps and websites that solve real problems.</p>
+        <div class="hero-buttons">
+            <a href="/projects" class="btn btn-primary">See My Work</a>
+            <a href="/contact" class="btn btn-secondary">Hire Me</a>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>What I Do</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">📱</div>
+                <h3>Mobile Apps</h3>
+                <p>Android apps built with Python and Kivy. Ready for the Play Store.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🌐</div>
+                <h3>Web Development</h3>
+                <p>Clean websites and web apps built with Flask and Python.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🐍</div>
+                <h3>Python Scripting</h3>
+                <p>Automation tools and scripts that save you time and money.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Built by <strong>Bryte</strong> &mdash; Ghana 🇬🇭</p>
+    </footer>
+</body>
+</html>
