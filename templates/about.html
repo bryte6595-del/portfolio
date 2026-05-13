@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Bryte</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">Bryte</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-hero">
+        <h1>About <span class="highlight">Me</span></h1>
+        <p class="muted">Developer. Builder. Problem Solver.</p>
+    </section>
+
+    <section class="about-content">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Who I Am</h2>
+                <p>I'm Bryte, a self-taught Python developer based in Ghana. I build mobile apps and websites that solve real problems for real people.</p>
+                <p>I started with zero experience and built my way up — learning Python, Kivy for mobile development, and Flask for web development. Every project taught me something new.</p>
+                <p>My goal is to build useful, beautiful software for clients around the world and earn from my craft.</p>
+            </div>
+            <div class="about-skills">
+                <h2>My Skills</h2>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Kivy (Mobile)</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Flask (Web)</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">HTML & CSS</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Git & GitHub</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="values">
+            <h2>What I Bring</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Fast Delivery</h3>
+                    <p>I focus and ship. No endless delays.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💬</div>
+                    <h3>Clear Communication</h3>
+                    <p>You always know what I'm working on.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Results Focused</h3>
+                    <p>I build what you need, not what's easiest.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Built by <strong>Bryte</strong> &mdash; Ghana 🇬🇭</p>
+    </footer>
+</body>
+</html>
